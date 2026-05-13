@@ -1,7 +1,7 @@
 # 低代码表单制作
 
 <p align="center">
-  <i>基于 JSON Schema 驱动的可视表单搭建平台 — 拖拽组件，即时预览，一键导出</i>
+  <i>基于 JSON Schema 驱动的可视化表单搭建平台 — 拖拽组件，即时预览，一键导出</i>
 </p>
 
 <p align="center">
@@ -92,7 +92,7 @@
 
 ```bash
 # 克隆仓库
-git clone https://github.com/your-username/modern-form-builder.git
+git clone https://github.com/Aju225/modern-form-builder.git
 cd modern-form-builder
 
 # 安装依赖
@@ -121,7 +121,7 @@ npm run preview
 ## 项目结构
 
 ```
-modern-form-builder/
+modern-form-builder/  (低代码表单制作)
 ├── index.html
 ├── package.json
 ├── vite.config.js
