@@ -1,7 +1,7 @@
 # 低代码表单制作
 
 <p align="center">
-  <i>基于 JSON Schema 驱动的可视化表单搭建平台 — 拖拽组件，即时预览，一键导出</i>
+  <i>基于 JSON Schema 驱动的可视表单搭建平台 — 拖拽组件，即时预览，一键导出</i>
 </p>
 
 <p align="center">
@@ -14,32 +14,13 @@
 </p>
 
 <p align="center">
-  <a href="#在线演示">在线演示</a> ·
   <a href="#核心亮点">核心亮点</a> ·
   <a href="#快速开始">快速开始</a> ·
   <a href="#项目结构">项目结构</a> ·
   <a href="#json-schema-规范">JSON Schema 规范</a>
 </p>
 
----
-
-## 项目演示
-
-<!-- 替换为你的 GIF 动图 -->
-<p align="center">
-  <img src="https://via.placeholder.com/800x450/1e293b/94a3b8?text=%E4%BD%8E%E4%BB%A3%E7%A0%81%E8%A1%A8%E5%8D%95%E6%90%AD%E5%BB%BA+Demo+GIF" 
-       width="800" 
-       alt="项目演示" 
-       style="border-radius: 12px" />
-</p>
-
-> 💡 **操作演示**：从左侧组件库拖入表单控件 → 在画布中调整排序 → 右侧面板配置属性 → 点击"预览"即时切换 → 提交表单在控制台输出 JSON 数据
-
-## 在线演示
-
-🔗 **[在线 Demo 地址](https://your-demo.vercel.app)** ← 部署后替换此链接
-
----
+***
 
 ## 核心亮点
 
@@ -64,22 +45,22 @@
 
 `bg-gray-950` 底色搭配 `bg-gray-900` 面板、`border-gray-800` 分隔线，构建出干净克制的暗色界面。dnd-kit 的拖拽反馈（半透明源卡片 + DragOverlay 跟随 + 蓝色脉冲占位框）让交互精准且自然。
 
----
+***
 
 ## 技术栈
 
-| 类别 | 技术 | 用途 |
-|------|------|------|
-| 框架 | React 18 | 组件化 UI |
-| 构建 | Vite 6 | 极速开发与生产打包 |
-| 样式 | Tailwind CSS 3 | 原子化 CSS，暗色主题 |
-| 状态管理 | Zustand 5 | 轻量级全局状态 |
-| 拖拽 | @dnd-kit/core + sortable | 组件拖入、排序、移动 |
-| 表单 | react-hook-form 7 | 预览模式下的表单渲染与校验 |
-| 图标 | lucide-react | 一致的图标体系 |
-| 部署 | Vercel | 零配置静态托管 |
+| 类别   | 技术                       | 用途            |
+| ---- | ------------------------ | ------------- |
+| 框架   | React 18                 | 组件化 UI        |
+| 构建   | Vite 6                   | 极速开发与生产打包     |
+| 样式   | Tailwind CSS 3           | 原子化 CSS，暗色主题  |
+| 状态管理 | Zustand 5                | 轻量级全局状态       |
+| 拖拽   | @dnd-kit/core + sortable | 组件拖入、排序、移动    |
+| 表单   | react-hook-form 7        | 预览模式下的表单渲染与校验 |
+| 图标   | lucide-react             | 一致的图标体系       |
+| 部署   | Vercel                   | 零配置静态托管       |
 
----
+***
 
 ## 快速开始
 
@@ -116,7 +97,7 @@ npm run preview
 
 构建产物输出至 `dist/` 目录，可直接部署到 Vercel / Netlify / GitHub Pages 等任意静态托管平台。
 
----
+***
 
 ## 项目结构
 
@@ -164,7 +145,7 @@ modern-form-builder/  (低代码表单制作)
                    └──────────┘  └─────────────┘
 ```
 
----
+***
 
 ## JSON Schema 规范
 
@@ -213,16 +194,16 @@ modern-form-builder/  (低代码表单制作)
 
 ### 字段说明
 
-| 字段 | 类型 | 说明 |
-|------|------|------|
-| `id` | string | 组件唯一标识（`comp_` 前缀 + 自增序号） |
-| `type` | string | 组件类型：`input` \| `textarea` \| `select` \| `radio` \| `checkbox` \| `switch` \| `button` |
-| `label` | string | 表单标签文本 |
-| `placeholder` | string | 输入框占位文本 |
-| `required` | boolean | 是否必填 |
-| `options` | string[] | 选项列表（仅 `select` / `radio` 使用） |
+| 字段            | 类型        | 说明                                                                                      |
+| ------------- | --------- | --------------------------------------------------------------------------------------- |
+| `id`          | string    | 组件唯一标识（`comp_` 前缀 + 自增序号）                                                               |
+| `type`        | string    | 组件类型：`input` \| `textarea` \| `select` \| `radio` \| `checkbox` \| `switch` \| `button` |
+| `label`       | string    | 表单标签文本                                                                                  |
+| `placeholder` | string    | 输入框占位文本                                                                                 |
+| `required`    | boolean   | 是否必填                                                                                    |
+| `options`     | string\[] | 选项列表（仅 `select` / `radio` 使用）                                                           |
 
----
+***
 
 ## License
 
